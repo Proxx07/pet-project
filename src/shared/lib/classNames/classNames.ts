@@ -5,7 +5,7 @@ export function classNames (mainClass: string, mods: Mods, additional: string[])
     mainClass,
     ...additional,
     ...Object.entries(mods)
-      .filter(([classname, value]) => Boolean(value))
+      .filter(([_, value]) => Boolean(value))
       .map(([classname]) => classname)
   ]
 
