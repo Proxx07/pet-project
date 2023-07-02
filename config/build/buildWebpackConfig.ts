@@ -16,7 +16,7 @@ export function buildWebpackConfig (options: BuildOptions): webpack.Configuratio
     },
 
     plugins: buildPlugins(options),
-    resolve: buildResolvers(),
+    resolve: buildResolvers(options),
     devServer: buildDevServer(options),
 
     output: {
